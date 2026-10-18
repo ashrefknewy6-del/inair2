@@ -2,6 +2,14 @@
 
 InAir turns any Android device into an ultra-low-latency wireless workstation, allowing nearby computers, tablets, or phones to view the screen, send gestures and keystrokes, and transfer files seamlessly over a high-speed local Wi-Fi or Local-Only Hotspot without leaving the local network.
 
+[![Build InAir APK](https://github.com/ashrefknewy6-del/inair2/actions/workflows/build-apk.yml/badge.svg)](https://github.com/ashrefknewy6-del/inair2/actions/workflows/build-apk.yml)
+[![Download APK](https://img.shields.io/badge/Download-InAir.apk-FF2D3F?style=for-the-badge&logo=android)](https://github.com/ashrefknewy6-del/inair2/releases/latest/download/InAir.apk)
+
+## Direct APK Download
+
+Download the latest version directly to your phone:
+**[Download InAir.apk](https://github.com/ashrefknewy6-del/inair2/releases/latest/download/InAir.apk)**
+
 ## Features
 
 - **Real-Time Screen Mirroring**: HTTP Motion JPEG (MJPEG) ultra-low-latency streaming on port 8080 with adjustable resolution (720p, 1080p, 1080p HD) and frame rate (15, 30, 60 FPS).
@@ -21,14 +29,14 @@ InAir turns any Android device into an ultra-low-latency wireless workstation, a
 - **Min SDK**: 26 (Android 8.0 Oreo)
 - **Target SDK**: 35 (Android 15)
 
-## Build & Run
+## Build Locally
 
 To assemble the debug APK:
 ```bash
-gradle :app:assembleDebug
+./gradlew assembleDebug
 ```
 
 To run unit and Robolectric tests:
 ```bash
-gradle :app:testDebugUnitTest
+./gradlew testDebugUnitTest
 ```
