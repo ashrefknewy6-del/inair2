@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">InAir</string>
+    <string name="tagline">Your phone, in the air.</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_screen">Screen</string>
+    <string name="nav_files">Files</string>
+    <string name="nav_devices">Devices</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Status -->
+    <string name="status_offline">Offline</string>
+    <string name="status_broadcasting">Broadcasting</string>
+    <string name="status_starting">Starting…</string>
+    <string name="status_stopping">Stopping…</string>
+    <string name="btn_start_broadcast">Start Broadcast</string>
+    <string name="btn_stop_broadcast">Stop Broadcast</string>
+
+    <!-- Connection Info -->
+    <string name="network_card_title">Local Network &amp; Hotspot</string>
+    <string name="hotspot_name">Hotspot SSID</string>
+    <string name="hotspot_password">Password</string>
+    <string name="web_address">Browser URL</string>
+    <string name="tap_to_copy">Tap to copy</string>
+    <string name="copied_to_clipboard">Copied to clipboard!</string>
+    <string name="qr_code_hint">Scan QR code from any laptop, tablet, or phone on the same network to connect instantly.</string>
+    <string name="connected_devices_count">%1$d device(s) connected</string>
+    <string name="no_devices_connected">No client connected yet</string>
+
+    <!-- Network Setup -->
+    <string name="network_setup_title">Network &amp; Hotspot Setup</string>
+    <string name="network_setup_subtitle">Configure your Wi-Fi or Local-Only Hotspot</string>
+    <string name="manual_ssid_label">Custom Hotspot Name (SSID)</string>
+    <string name="manual_password_label">Custom Password (min. 8 characters)</string>
+    <string name="password_strength_label">Password Strength</string>
+    <string name="password_strength_weak">Weak</string>
+    <string name="password_strength_medium">Medium</string>
+    <string name="password_strength_strong">Strong</string>
+    <string name="open_system_hotspot_settings">Open System Hotspot Settings</string>
+    <string name="hotspot_auto_managed">Automatic Local-Only Hotspot</string>
+    <string name="hotspot_auto_managed_desc">Android generates a secure temporary local Wi-Fi hotspot without mobile data consumption.</string>
+
+    <!-- Screen Share -->
+    <string name="screen_share_title">Screen Mirroring</string>
+    <string name="screen_share_subtitle">Real-time ultra-low latency display streaming</string>
+    <string name="screen_preview_title">Live Screen Stream Preview</string>
+    <string name="screen_stream_resolution">Resolution</string>
+    <string name="resolution_low">720p (Fastest)</string>
+    <string name="resolution_medium">1080p (Balanced)</string>
+    <string name="resolution_high">1080p HD (Best Quality)</string>
+    <string name="screen_stream_fps">Frame Rate</string>
+    <string name="fps_15">15 FPS (Battery Saver)</string>
+    <string name="fps_30">30 FPS (Standard)</string>
+    <string name="fps_60">60 FPS (Ultra Smooth)</string>
+    <string name="screen_share_active">Screen stream is running</string>
+    <string name="screen_share_inactive">Screen stream is idle</string>
+    <string name="btn_toggle_screen_stream">Toggle Stream</string>
+    <string name="bandwidth_usage">Live Transfer Rate: %1$.1f KB/s</string>
+
+    <!-- Remote Control -->
+    <string name="remote_control_title">Remote Touch &amp; Navigation</string>
+    <string name="remote_control_subtitle">Control this phone from any web browser</string>
+    <string name="accessibility_status_active">Accessibility Service Active</string>
+    <string name="accessibility_status_inactive">Accessibility Service Required</string>
+    <string name="accessibility_toggle_label">Enable Remote Control Input</string>
+    <string name="accessibility_guide_title">How to enable Remote Control</string>
+    <string name="accessibility_guide_desc">To allow remote clicks, swipes, and system buttons (Back, Home, Recents) from your browser, please enable InAir in Android Accessibility Settings.</string>
+    <string name="btn_open_accessibility_settings">Open Accessibility Settings</string>
+    <string name="accessibility_disclosure_title">Accessibility Service Disclosure</string>
+    <string name="accessibility_disclosure_body">InAir uses the Android AccessibilityService API strictly to dispatch remote gestures (taps, drags, swipes) and system keys (Back, Home, Recents) sent by your authorized web browser session. InAir does NOT collect, inspect, record, or transmit your personal data, keystrokes, passwords, or on-screen text to any external servers. All operations happen strictly over your local Wi-Fi connection.</string>
+    <string name="btn_accept_disclosure">I Understand &amp; Agree</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <!-- File Share -->
+    <string name="file_share_title">Wireless File Hub</string>
+    <string name="file_share_subtitle">High-speed file transfer between phone and browser</string>
+    <string name="shared_folder_title">Shared Storage Folder</string>
+    <string name="shared_folder_desc">Restricted to a single folder chosen by you for safety.</string>
+    <string name="current_shared_folder">Folder: %1$s</string>
+    <string name="btn_select_shared_folder">Change Shared Folder</string>
+    <string name="no_folder_selected">Default App Storage Directory</string>
+    <string name="upload_queue_title">Active Transfers</string>
+    <string name="no_transfers_in_progress">No active file transfers</string>
+    <string name="file_uploaded_success">Uploaded: %1$s</string>
+    <string name="file_downloaded_success">Downloaded: %1$s</string>
+    <string name="transfer_progress">%1$s — %2$d%%</string>
+
+    <!-- Connected Devices -->
+    <string name="devices_title">Connected Devices</string>
+    <string name="devices_subtitle">Inspect and manage connected browser clients</string>
+    <string name="device_ip">IP: %1$s</string>
+    <string name="device_connected_time">Connected %1$s ago</string>
+    <string name="btn_kick_device">Kick</string>
+    <string name="btn_block_device">Block IP</string>
+    <string name="device_kicked_toast">Device disconnected</string>
+    <string name="device_blocked_toast">Device IP blocked</string>
+    <string name="blocked_devices_title">Blocked Clients</string>
+    <string name="btn_unblock">Unblock</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_subtitle">App preferences, security, and policies</string>
+    <string name="settings_security_section">Security &amp; Privacy</string>
+    <string name="setting_require_approval">Require device approval</string>
+    <string name="setting_require_approval_desc">Ask for confirmation on phone when a new client connects</string>
+    <string name="setting_pin_protection">PIN Protection for Web</string>
+    <string name="setting_pin_protection_desc">Require browser clients to enter a 4-digit PIN</string>
+    <string name="setting_change_pin">Change Access PIN</string>
+    <string name="current_pin_label">PIN: %1$s</string>
+    <string name="setting_auto_stop">Auto-Stop Timer</string>
+    <string name="setting_auto_stop_desc">Automatically stop broadcasting when idle</string>
+    <string name="timer_never">Never</string>
+    <string name="timer_15m">15 Minutes</string>
+    <string name="timer_30m">30 Minutes</string>
+    <string name="timer_1h">1 Hour</string>
+    <string name="settings_appearance_section">Appearance &amp; Language</string>
+    <string name="setting_language">Language</string>
+    <string name="lang_english">English</string>
+    <string name="lang_arabic">العربية (Arabic)</string>
+    <string name="settings_about_section">About InAir</string>
+    <string name="about_version">Version 1.0.0 (Build 35)</string>
+    <string name="about_desc">InAir is a private, zero-cloud workstation utility designed to mirror your Android screen, execute gestures, and exchange files at local network speeds.</string>
+    <string name="btn_privacy_policy">Privacy Policy &amp; Security</string>
+
+    <!-- Privacy Policy Screen -->
+    <string name="privacy_title">Privacy Policy</string>
+    <string name="privacy_section_local_network">100% Local Network Processing</string>
+    <string name="privacy_local_network_desc">InAir operates entirely on your local Wi-Fi or Local-Only Hotspot. No video frames, input commands, file contents, or device identifiers are ever sent over the internet or uploaded to any third-party cloud or analytics server.</string>
+    <string name="privacy_section_media_projection">Screen Capture &amp; MediaProjection</string>
+    <string name="privacy_media_projection_desc">InAir captures display frames only while the broadcast server is actively started by you. A persistent system notification is always visible while screen capture is active, and you can stop it at any second with a single tap.</string>
+    <string name="privacy_section_accessibility">Accessibility API Usage</string>
+    <string name="privacy_accessibility_desc">The Accessibility Service is used solely to synthesize user-commanded touch taps and system navigation events from your authorized web browser session. It does not monitor notifications, track passwords, or read screen contents.</string>
+    <string name="privacy_section_storage">File Storage Protection</string>
+    <string name="privacy_storage_desc">File sharing is strictly confined to the directory you explicitly choose through the Android Storage Access Framework. The web dashboard has no access to your private app storage or other folders.</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_finish">Get Started</string>
+    <string name="onboarding_1_title">Screen in the Air</string>
+    <string name="onboarding_1_desc">Stream your phone screen to any desktop or tablet browser at crystal-clear quality with zero cables or third-party software.</string>
+    <string name="onboarding_2_title">Complete Wireless Control</string>
+    <string name="onboarding_2_desc">Click, scroll, swipe, and use system buttons directly from your computer keyboard and mouse via secure Accessibility integration.</string>
+    <string name="onboarding_3_title">Blazing File Hub</string>
+    <string name="onboarding_3_desc">Drag and drop photos, documents, and videos directly between your devices at full local Wi-Fi gigabit speeds.</string>
+    <string name="permission_dialog_title">Permissions Required</string>
+    <string name="permission_dialog_desc">InAir requires permissions for Wi-Fi management, Notifications, and MediaProjection to stream your screen over the local network.</string>
+    <string name="btn_grant_permissions">Grant Permissions</string>
+
+    <!-- Security Dialogs -->
+    <string name="client_request_title">New Device Connection</string>
+    <string name="client_request_message">Client from IP %1$s is requesting access to view your screen and transfer files. Do you approve this session?</string>
+    <string name="btn_allow">Allow Access</string>
+    <string name="btn_reject">Reject &amp; Block</string>
+
+    <!-- Foreground Notification -->
+    <string name="notification_channel_name">InAir Broadcast Service</string>
+    <string name="notification_channel_desc">Shows active status and stop control when InAir is broadcasting</string>
+    <string name="notification_title">InAir is Broadcasting</string>
+    <string name="notification_text">Your phone screen and file hub are accessible at %1$s</string>
+    <string name="notification_stop_action">Stop Broadcast</string>
+
+    <!-- Accessibility Description -->
+    <string name="accessibility_service_description">Enables authorized remote touch gestures, taps, swipes, and navigation keys (Home, Back, Recents) triggered from your InAir web browser dashboard.</string>
+</resources>

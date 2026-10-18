@@ -1,0 +1,6 @@
+{
+  "name": "InAir",
+  "description": "Your phone, in the air. Real-time screen mirroring, remote control, and wireless file sharing over local Wi-Fi and hotspot.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

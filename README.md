@@ -1,11 +1,34 @@
-<div align="center">
+# InAir — "Your phone, in the air."
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+InAir turns any Android device into an ultra-low-latency wireless workstation, allowing nearby computers, tablets, or phones to view the screen, send gestures and keystrokes, and transfer files seamlessly over a high-speed local Wi-Fi or Local-Only Hotspot without leaving the local network.
 
-  <h1>Built with AI Studio</h2>
+## Features
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **Real-Time Screen Mirroring**: HTTP Motion JPEG (MJPEG) ultra-low-latency streaming on port 8080 with adjustable resolution (720p, 1080p, 1080p HD) and frame rate (15, 30, 60 FPS).
+- **Remote Touch & Navigation**: Native Android `AccessibilityService` integration allowing mouse clicks, touch swipes, and system buttons (Back, Home, Recents, Notifications) from any desktop browser.
+- **Wireless File Hub**: Drag-and-drop file transfers between browser and phone, strictly isolated to a user-chosen Storage Access Framework (SAF) folder with per-file progress meters.
+- **Automatic & Manual Hotspot**: `WifiManager.startLocalOnlyHotspot` support with QR code pairing and manual SSID/Password credential configuration with live password strength meters.
+- **Privacy & Security First**: 100% offline and local (zero cloud telemetry), interactive on-screen device approval prompts, 4-digit PIN protection, IP blacklisting/kicking, and auto-stop idle sleep timer.
+- **Strict Material Design 3**: Dark-first aesthetic with signature 135° red gradient (#FF2D3F to #B3001B), glassmorphism 28dp cards, radar-style pulsing power button, and animated bandwidth graphs.
+- **Bilingual & RTL**: Complete English and Arabic localization with Inter and Cairo typography.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Architecture
 
-</div>
+- **Language**: Kotlin 100%
+- **UI Toolkit**: Jetpack Compose with Material 3 (Material You)
+- **Architecture**: MVVM with Clean Architecture and Kotlin Coroutines/Flow
+- **Server Engine**: Pure Kotlin non-blocking embedded HTTP & MJPEG server
+- **Min SDK**: 26 (Android 8.0 Oreo)
+- **Target SDK**: 35 (Android 15)
+
+## Build & Run
+
+To assemble the debug APK:
+```bash
+gradle :app:assembleDebug
+```
+
+To run unit and Robolectric tests:
+```bash
+gradle :app:testDebugUnitTest
+```

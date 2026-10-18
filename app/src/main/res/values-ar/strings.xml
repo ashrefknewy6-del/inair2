@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">InAir</string>
+    <string name="tagline">هاتفك، في الهواء.</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_screen">الشاشة</string>
+    <string name="nav_files">الملفات</string>
+    <string name="nav_devices">الأجهزة</string>
+    <string name="nav_settings">الإعدادات</string>
+
+    <!-- Status -->
+    <string name="status_offline">غير متصل</string>
+    <string name="status_broadcasting">البث جارٍ الآن</string>
+    <string name="status_starting">جارٍ بدء البث…</string>
+    <string name="status_stopping">جارٍ إيقاف البث…</string>
+    <string name="btn_start_broadcast">بدء البث اللاسلكي</string>
+    <string name="btn_stop_broadcast">إيقاف البث</string>
+
+    <!-- Connection Info -->
+    <string name="network_card_title">الشبكة المحلية ونقطة الاتصال</string>
+    <string name="hotspot_name">اسم الشبكة (SSID)</string>
+    <string name="hotspot_password">كلمة المرور</string>
+    <string name="web_address">عنوان المتصفح</string>
+    <string name="tap_to_copy">اضغط للنسخ</string>
+    <string name="copied_to_clipboard">تم النسخ إلى الحافظة!</string>
+    <string name="qr_code_hint">امسح رمز الاستجابة السريعة (QR) من أي حاسوب أو جهاز لوحي على نفس الشبكة للاتصال فوراً.</string>
+    <string name="connected_devices_count">%1$d جهاز/أجهزة متصلة</string>
+    <string name="no_devices_connected">لا توجد أجهزة متصلة بعد</string>
+
+    <!-- Network Setup -->
+    <string name="network_setup_title">إعداد الشبكة ونقطة الاتصال</string>
+    <string name="network_setup_subtitle">تهيئة شبكة Wi-Fi أو نقطة الاتصال المحلية</string>
+    <string name="manual_ssid_label">اسم نقطة الاتصال المخصص</string>
+    <string name="manual_password_label">كلمة المرور المخصصة (8 أحرف كحد أدنى)</string>
+    <string name="password_strength_label">قوة كلمة المرور</string>
+    <string name="password_strength_weak">ضعيفة</string>
+    <string name="password_strength_medium">متوسطة</string>
+    <string name="password_strength_strong">قوية</string>
+    <string name="open_system_hotspot_settings">فتح إعدادات نقطة الاتصال بالنظام</string>
+    <string name="hotspot_auto_managed">نقطة اتصال محلية تلقائية</string>
+    <string name="hotspot_auto_managed_desc">يقوم أندرويد بإنشاء نقطة اتصال محلية آمنة ومؤقتة دون استهلاك باقة البيانات.</string>
+
+    <!-- Screen Share -->
+    <string name="screen_share_title">مشاركة وبث الشاشة</string>
+    <string name="screen_share_subtitle">بث شاشة الهاتف مباشرة بزمن استجابة فائق السرعة</string>
+    <string name="screen_preview_title">معاينة البث المباشر للشاشة</string>
+    <string name="screen_stream_resolution">الدقة والجودة</string>
+    <string name="resolution_low">720p (أسرع أداء)</string>
+    <string name="resolution_medium">1080p (متوازن)</string>
+    <string name="resolution_high">1080p فائقة الدقة (أعلى جودة)</string>
+    <string name="screen_stream_fps">معدل الإطارات (FPS)</string>
+    <string name="fps_15">15 إطار/ث (توفير البطارية)</string>
+    <string name="fps_30">30 إطار/ث (قياسي)</string>
+    <string name="fps_60">60 إطار/ث (فائق السلاسة)</string>
+    <string name="screen_share_active">بث الشاشة قيد التشغيل</string>
+    <string name="screen_share_inactive">بث الشاشة متوقف حالياً</string>
+    <string name="btn_toggle_screen_stream">تبديل البث</string>
+    <string name="bandwidth_usage">معدل النقل المباشر: %1$.1f ك.بايت/ث</string>
+
+    <!-- Remote Control -->
+    <string name="remote_control_title">التحكم عن بُعد والتنقل</string>
+    <string name="remote_control_subtitle">التحكم في هاتفك من أي متصفح إنترنت</string>
+    <string name="accessibility_status_active">خدمة إمكانية الوصول مفعّلة</string>
+    <string name="accessibility_status_inactive">خدمة إمكانية الوصول مطلوبة</string>
+    <string name="accessibility_toggle_label">تفعيل إدخال التحكم عن بُعد</string>
+    <string name="accessibility_guide_title">كيفية تفعيل التحكم عن بُعد</string>
+    <string name="accessibility_guide_desc">للسماح بالنقرات والسحب وأزرار النظام (الرجوع، الشاشة الرئيسية، التطبيقات الأخيرة) من متصفحك، يرجى تفعيل InAir في إعدادات إمكانية الوصول لنظام أندرويد.</string>
+    <string name="btn_open_accessibility_settings">فتح إعدادات إمكانية الوصول</string>
+    <string name="accessibility_disclosure_title">إفصاح خدمة إمكانية الوصول</string>
+    <string name="accessibility_disclosure_body">يستخدم تطبيق InAir واجهة برمجة تطبيقات إمكانية الوصول (AccessibilityService) حصرياً لإرسال إيماءات اللمس عن بُعد (النقرات، السحب، التحريك) ومفاتيح النظام الصادرة من جلسة المتصفح المصرح لها من قبلك. لا يقوم InAir بجمع أو فحص أو تسجيل أو إرسال أي بيانات شخصية أو ضغطات مفاتيح أو كلمات مرور أو نصوص تظهر على الشاشة إلى أي خوادم خارجية. جميع العمليات تتم محلياً وبشكل صارم عبر شبكة Wi-Fi المحلية الخاصة بك.</string>
+    <string name="btn_accept_disclosure">فهمت وأوافق</string>
+    <string name="btn_cancel">إلغاء</string>
+
+    <!-- File Share -->
+    <string name="file_share_title">مركز نقل الملفات اللاسلكي</string>
+    <string name="file_share_subtitle">نقل فائق السرعة للملفات بين الهاتف والمتصفح</string>
+    <string name="shared_folder_title">مجلد التخزين المشترك</string>
+    <string name="shared_folder_desc">مقتصر حصراً على المجلد الفردي الذي تحدده لضمان الأمان التام.</string>
+    <string name="current_shared_folder">المجلد: %1$s</string>
+    <string name="btn_select_shared_folder">تغيير المجلد المشترك</string>
+    <string name="no_folder_selected">دليل تخزين التطبيق الافتراضي</string>
+    <string name="upload_queue_title">عمليات النقل النشطة</string>
+    <string name="no_transfers_in_progress">لا توجد عمليات نقل ملفات حالياً</string>
+    <string name="file_uploaded_success">تم الرفع: %1$s</string>
+    <string name="file_downloaded_success">تم التنزيل: %1$s</string>
+    <string name="transfer_progress">%1$s — %2$d%%</string>
+
+    <!-- Connected Devices -->
+    <string name="devices_title">الأجهزة المتصلة</string>
+    <string name="devices_subtitle">فحص وإدارة متصفحات العملاء المتصلة</string>
+    <string name="device_ip">عنوان IP: %1$s</string>
+    <string name="device_connected_time">متصل منذ %1$s</string>
+    <string name="btn_kick_device">فصل</string>
+    <string name="btn_block_device">حظر IP</string>
+    <string name="device_kicked_toast">تم فصل الجهاز</string>
+    <string name="device_blocked_toast">تم حظر عنوان IP للجهاز</string>
+    <string name="blocked_devices_title">الأجهزة المحظورة</string>
+    <string name="btn_unblock">إلغاء الحظر</string>
+
+    <!-- Settings -->
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_subtitle">تفضيلات التطبيق والأمان والسياسات</string>
+    <string name="settings_security_section">الأمان والخصوصية</string>
+    <string name="setting_require_approval">طلب الموافقة على الأجهزة الجديدة</string>
+    <string name="setting_require_approval_desc">طلب تأكيد على الهاتف عند محاولة أي جهاز جديد الاتصال</string>
+    <string name="setting_pin_protection">حماية المتصفح برمز PIN</string>
+    <string name="setting_pin_protection_desc">إلزام متصفحات الويب بإدخال رمز PIN مكون من 4 أرقام</string>
+    <string name="setting_change_pin">تغيير رمز PIN</string>
+    <string name="current_pin_label">رمز PIN: %1$s</string>
+    <string name="setting_auto_stop">مؤقت الإيقاف التلقائي</string>
+    <string name="setting_auto_stop_desc">إيقاف البث تلقائياً عند خمول الاتصال</string>
+    <string name="timer_never">أبداً</string>
+    <string name="timer_15m">15 دقيقة</string>
+    <string name="timer_30m">30 دقيقة</string>
+    <string name="timer_1h">ساعة واحدة</string>
+    <string name="settings_appearance_section">المظهر واللغة</string>
+    <string name="setting_language">اللغة</string>
+    <string name="lang_english">English (الإنجليزية)</string>
+    <string name="lang_arabic">العربية</string>
+    <string name="settings_about_section">حول InAir</string>
+    <string name="about_version">الإصدار 1.0.0 (البناء 35)</string>
+    <string name="about_desc">تطبيق InAir هو منصة عمل محلية آمنة تتيح بث شاشة هاتفك الأندرويد والتحكم به وتبادل الملفات بسرعة الشبكة المحلية وبدون إنترنت.</string>
+    <string name="btn_privacy_policy">سياسة الخصوصية والأمان</string>
+
+    <!-- Privacy Policy Screen -->
+    <string name="privacy_title">سياسة الخصوصية</string>
+    <string name="privacy_section_local_network">معالجة محلية بالكامل بنسبة 100%</string>
+    <string name="privacy_local_network_desc">يعمل تطبيق InAir محلياً بالكامل عبر شبكة Wi-Fi أو نقطة الاتصال المحلية. لا يتم إرسال أي إطارات فيديو أو أوامر تحكم أو محتويات ملفات أو معرّفات أجهزة عبر الإنترنت أو إلى أي خوادم سحابية خارجية.</string>
+    <string name="privacy_section_media_projection">التقاط الشاشة وبثها</string>
+    <string name="privacy_media_projection_desc">يلتقط InAir إطارات الشاشة فقط أثناء تشغيل خادم البث من قبلك. يظهر دائماً إشعار نظام مستمر طوال فترة البث، ويمكنك إيقافه في أي ثانية بنقرة واحدة.</string>
+    <string name="privacy_section_accessibility">استخدام خدمة إمكانية الوصول</string>
+    <string name="privacy_accessibility_desc">تُستخدم خدمة إمكانية الوصول حصراً لتطبيق نقرات اللمس وأوامر التنقل الصادرة من متصفح الويب المعتمد. لا تراقب الخدمة الإشعارات ولا تسجل كلمات المرور ولا تقرأ محتويات الشاشة.</string>
+    <string name="privacy_section_storage">حماية تخزين الملفات</string>
+    <string name="privacy_storage_desc">يقتصر نقل الملفات تماماً على المجلد الذي تختاره أنت صراحةً عبر إطار عمل الوصول إلى التخزين بنظام أندرويد. لا يمتلك المتصفح أي وصول إلى بيانات تطبيقاتك الخاصة أو المجلدات الأخرى.</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">تخطي</string>
+    <string name="onboarding_next">التالي</string>
+    <string name="onboarding_finish">ابدأ الآن</string>
+    <string name="onboarding_1_title">شاشتك في الهواء</string>
+    <string name="onboarding_1_desc">قم ببث شاشة هاتفك إلى أي متصفح على الحاسوب أو الجهاز اللوحي بجودة نقية وفائقة السرعة ودون أي كابلات أو برامج إضافية.</string>
+    <string name="onboarding_2_title">تحكم لاسلكي كامل</string>
+    <string name="onboarding_2_desc">انقر واسحب وتنقل وتفاعل مباشرة باستخدام لوحة المفاتيح والفأرة عبر لوحة الويب الحديثة بأمان وسهولة.</string>
+    <string name="onboarding_3_title">مركز ملفات لاسلكي خاطف</string>
+    <string name="onboarding_3_desc">اسحب وأفلت الصور والمستندات ومقاطع الفيديو مباشرة بين أجهزتك بسرعات شبكة Wi-Fi المحلية القصوى.</string>
+    <string name="permission_dialog_title">الأذونات المطلوبة</string>
+    <string name="permission_dialog_desc">يتطلب InAir أذونات إدارة شبكة Wi-Fi والإشعارات وبث الشاشة لتمكين البث اللاسلكي الآمن عبر الشبكة المحلية.</string>
+    <string name="btn_grant_permissions">منح الأذونات</string>
+
+    <!-- Security Dialogs -->
+    <string name="client_request_title">طلب اتصال جهاز جديد</string>
+    <string name="client_request_message">يطلب الجهاز ذو عنوان IP %1$s الوصول لعرض الشاشة ومشاركة الملفات. هل توافق على هذه الجلسة؟</string>
+    <string name="btn_allow">السماح بالاتصال</string>
+    <string name="btn_reject">رفض وحظر</string>
+
+    <!-- Foreground Notification -->
+    <string name="notification_channel_name">خدمة بث InAir</string>
+    <string name="notification_channel_desc">يُظهر حالة البث المباشر وزر الإيقاف السريع عند تشغيل InAir</string>
+    <string name="notification_title">InAir يبث شاشتك الآن</string>
+    <string name="notification_text">شاشة هاتفك وملفاتك متاحة عبر: %1$s</string>
+    <string name="notification_stop_action">إيقاف البث</string>
+
+    <!-- Accessibility Description -->
+    <string name="accessibility_service_description">تتيح تنفيذ إيماءات اللمس والنقر والسحب ومفاتيح التنقل (الرئيسية، الرجوع، التطبيقات الأخيرة) من لوحة تحكم متصفح InAir المصرح لها.</string>
+</resources>

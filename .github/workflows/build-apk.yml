@@ -1,0 +1,101 @@
+name: Build InAir APK
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build & Release InAir APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'gradle'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x ./gradlew
+
+      - name: Build APK (Release or Debug Fallback)
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: |
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "Keystore secret found. Decoding keystore for signed release build..."
+            echo "$KEYSTORE_BASE64" | base64 -d > keystore.jks
+            export KEYSTORE_FILE="keystore.jks"
+            export KEYSTORE_PATH="keystore.jks"
+            export STORE_PASSWORD="$KEYSTORE_PASSWORD"
+            ./gradlew assembleRelease --no-daemon
+            
+            if [ -f app/build/outputs/apk/release/app-release.apk ]; then
+              cp app/build/outputs/apk/release/app-release.apk InAir.apk
+            else
+              find app/build/outputs/apk/release -name "*.apk" -exec cp {} InAir.apk \;
+            fi
+          else
+            echo "No KEYSTORE_BASE64 secret configured. Building signed debug APK as fallback..."
+            ./gradlew assembleDebug --no-daemon
+            
+            if [ -f app/build/outputs/apk/debug/app-debug.apk ]; then
+              cp app/build/outputs/apk/debug/app-debug.apk InAir.apk
+            else
+              find app/build/outputs/apk/debug -name "*.apk" -exec cp {} InAir.apk \;
+            fi
+          fi
+          
+          if [ ! -f InAir.apk ]; then
+            echo "Error: InAir.apk was not found!"
+            exit 1
+          fi
+          echo "InAir.apk successfully built: $(ls -lh InAir.apk | awk '{print $5}')"
+
+      - name: Upload APK as Workflow Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: InAir-apk
+          path: InAir.apk
+          retention-days: 14
+
+      - name: Determine Release Tag & Title
+        id: release_info
+        run: |
+          if [[ "${{ github.ref }}" == refs/tags/* ]]; then
+            TAG="${{ github.ref_name }}"
+            NAME="InAir $TAG"
+          else
+            TAG="build-${{ github.run_number }}"
+            NAME="InAir build #${{ github.run_number }}"
+          fi
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "name=$NAME" >> $GITHUB_OUTPUT
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.release_info.outputs.tag }}
+          name: ${{ steps.release_info.outputs.name }}
+          files: InAir.apk
+          draft: false
+          prerelease: false
+          generate_release_notes: true
